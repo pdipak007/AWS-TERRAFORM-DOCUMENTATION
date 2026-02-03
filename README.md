@@ -5,11 +5,11 @@
 -This task focuses on understanding and implementing AWS core infrastructure services such as VPC, EC2, and Security Groups.
 -The infrastructure is created using both manual (AWS Console) and automated (Terraform) approaches.
 
-# What is AWS?
+## What is AWS?
 
 Amazon Web Services (AWS) is a cloud computing platform provided by Amazon that offers on-demand services like computing power, storage, networking, and security.
 
-# Why AWS?
+### Why AWS?
 
 -Pay only for what you use
 -Highly scalable and reliable
