@@ -1,4 +1,4 @@
-## AWS VPC, EC2 & Security Groups Documentation
+# AWS VPC, EC2 & Security Groups Documentation
 
 # Overview
 
