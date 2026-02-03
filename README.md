@@ -46,7 +46,6 @@ Full control over IP addressing
 
 # EC2 (Elastic Compute Cloud)
 
-
 EC2 provides resizable virtual servers (instances) to run applications in the cloud.
 
 # Features
@@ -71,13 +70,13 @@ Step 1: Create VPC
 
 Go to VPC Dashboard
 Click Create VPC
-Enter CIDR block (example: 10.0.0.0/16)
+Enter CIDR block ```(example: 10.0.0.0/16)```
 Create VPC
 
 Step 2: Create Subnets
 
-Create Public Subnet (example: 10.0.1.0/24)
-Create Private Subnet (example: 10.0.2.0/24)
+Create Public Subnet ```(example: 10.0.1.0/24)```
+Create Private Subnet ```(example: 10.0.2.0/24)```
 
 Step 3: Create Internet Gateway
 
@@ -87,7 +86,7 @@ Attach it to the VPC
 Step 4: Configure Route Table
 
 Add route:
-0.0.0.0/0 → Internet Gateway
+```0.0.0.0/0``` → Internet Gateway
 Associate with Public Subnet
 
 Step 5: Create Security Group
@@ -107,10 +106,10 @@ Launch instance
 
 # Method 2: Automated Setup (Terraform)
 Step 1: Install Terraform
-terraform --version
+```terraform --version ```
 
 Step 2: Initialize Terraform
-terraform init
+```terraform init```
 
 Step 3: Define Infrastructure (main.tf)
 
@@ -124,21 +123,22 @@ Security Groups
 EC2 Instance
 
 Step 4: Plan Infrastructure
-terraform plan
+```terraform plan```
 
 Step 5: Apply Configuration
-terraform apply
+```terraform apply```
 
 Step 6: Destroy Resources (Optional)
-terraform destroy
+```terraform destroy```
 
 # Repository Structure
-
+```
 AWS-TERRAFORM-DOCUMENTATION/
 │── main.tf
 │── provider.tf
 │── variables.tf
 │── README.md
+```
 
 # Key Learnings
 
