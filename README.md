@@ -1,6 +1,6 @@
 # AWS VPC, EC2 & Security Groups Documentation
 
-# Overview
+## Overview
 
 -This task focuses on understanding and implementing AWS core infrastructure services such as VPC, EC2, and Security Groups.
 -The infrastructure is created using both manual (AWS Console) and automated (Terraform) approaches.
