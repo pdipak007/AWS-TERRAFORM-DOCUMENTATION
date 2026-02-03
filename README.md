@@ -135,12 +135,10 @@ terraform destroy
 # Repository Structure
 
 AWS-TERRAFORM-DOCUMENTATION/
-"""
 │── main.tf
 │── provider.tf
 │── variables.tf
 │── README.md
-"""
 
 # Key Learnings
 
