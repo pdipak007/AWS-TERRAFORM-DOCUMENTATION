@@ -16,22 +16,22 @@ Amazon Web Services (AWS) is a cloud computing platform provided by Amazon that 
 -Secure global infrastructure
 -Used by startups to enterprises
 
-# What is Terraform?
+## What is Terraform?
 
 Terraform is an Infrastructure as Code (IaC) tool used to automate cloud resource creation using configuration files.
 
-# Why Terraform?
+### Why Terraform?
 
 -Automates infrastructure
 -Reduces manual errors
 -Easy to reuse and modify
 -Version control friendly
 
-# AWS VPC (Virtual Private Cloud)
+## AWS VPC (Virtual Private Cloud)
 
 A VPC is a logically isolated virtual network in AWS where you can launch resources like EC2 instances.
 
-# Key Components
+### Key Components
 
 -CIDR Block
 -Public Subnet
@@ -39,79 +39,79 @@ A VPC is a logically isolated virtual network in AWS where you can launch resour
 -Internet Gateway
 -Route Table
 
-# Benefits
+### Benefits
 
 -Network isolation
 -Better security
 -Full control over IP addressing
 
-# EC2 (Elastic Compute Cloud)
+## EC2 (Elastic Compute Cloud)
 
 EC2 provides resizable virtual servers (instances) to run applications in the cloud.
 
-# Features
+### Features
 
-Multiple instance types
-Scalable compute capacity
-Pay-as-you-go pricing
+-Multiple instance types
+-Scalable compute capacity
+-Pay-as-you-go pricing
 
-# Security Groups (SG)
+## Security Groups (SG)
 
 A Security Group acts as a virtual firewall for EC2 instances, controlling inbound and outbound traffic.
 
-# Key Points
+### Key Points
 
 -Instance-level security
 -Stateful firewall
 -Supports allow rules only
 
-# Infrastructure Implementation
-# Method 1: Manual Setup (AWS Console)
-Step 1: Create VPC
+## Infrastructure Implementation
+### Method 1: Manual Setup (AWS Console)
+#### Step 1: Create VPC
 
 -Go to VPC Dashboard
 -Click Create VPC
 -Enter CIDR block ```(example: 10.0.0.0/16)```
 -Create VPC
 
-Step 2: Create Subnets
+#### Step 2: Create Subnets
 
 -Create Public Subnet ```(example: 10.0.1.0/24)```
 -Create Private Subnet ```(example: 10.0.2.0/24)```
 
-Step 3: Create Internet Gateway
+#### Step 3: Create Internet Gateway
 
 -Create Internet Gateway
 -Attach it to the VPC
 
-Step 4: Configure Route Table
+#### Step 4: Configure Route Table
 
 -Add route:
 ```0.0.0.0/0``` → Internet Gateway
 -Associate with Public Subnet
 
-Step 5: Create Security Group
+#### Step 5: Create Security Group
 
 -Allow:
   -SSH (22)
   -HTTP (80)
 -Restrict access for security
 
-Step 6: Launch EC2 Instance
+#### Step 6: Launch EC2 Instance
 -Choose AMI
 -Select instance type
 -Attach VPC & subnet
 -Assign Security Group
 -Launch instance
 
-# Method 2: Automated Setup (Terraform)
-Step 1: Install Terraform
+## Method 2: Automated Setup (Terraform)
+#### Step 1: Install Terraform
 ```terraform --version ```
 
-Step 2: Initialize Terraform
+#### Step 2: Initialize Terraform
 ```terraform init```
 
-Step 3: Define Infrastructure (main.tf)
+#### Step 3: Define Infrastructure (main.tf)
 
 Terraform configuration includes:
 -VPC
@@ -121,16 +121,16 @@ Terraform configuration includes:
 -Security Groups
 -EC2 Instance
 
-Step 4: Plan Infrastructure
+#### Step 4: Plan Infrastructure
 ```terraform plan```
 
-Step 5: Apply Configuration
+#### Step 5: Apply Configuration
 ```terraform apply```
 
-Step 6: Destroy Resources (Optional)
+#### Step 6: Destroy Resources (Optional)
 ```terraform destroy```
 
-# Repository Structure
+## Repository Structure
 ```
 AWS-TERRAFORM-DOCUMENTATION/
 │── main.tf
@@ -139,13 +139,13 @@ AWS-TERRAFORM-DOCUMENTATION/
 │── README.md
 ```
 
-# Key Learnings
+## Key Learnings
 
 -Understanding AWS networking fundamentals
 -Creating secure cloud infrastructure
 -Difference between manual and automated provisioning
 -Basics of Infrastructure as Code (IaC)
 
-# Conclusion
+## Conclusion
 
 This task helped in gaining hands-on experience with AWS core services and understanding how Terraform simplifies infrastructure management by automating resource provisioning.
